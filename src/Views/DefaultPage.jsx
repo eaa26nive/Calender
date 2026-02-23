@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import '../App.css'
 import EventList from '../Components/EventList';
-import Footer from '../Components/Footer';
-import Header from '../Components/Header';
 import myimage from '../assets/calenderimage.jpg';
 import Searchfield from '../Components/Searchfield';
 
@@ -51,10 +49,8 @@ const handleInputChange = (event) => {
   return (
     <div>
       <img src={myimage} alt="this is my image of a flower field"/>
-      <Header/>
       <Searchfield handleinput={handleInputChange} filter={filterText}/>
       <EventList events={filteredevents}/>
- <Footer/>
     </div>
   )
 }
